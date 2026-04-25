@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Homebrew build artifacts
+*.bottle.tar.gz
+*.bottle.json
+*.bottle.*.tar.gz
+
+# Homebrew cache / test artifacts
+/homebrew_logs/
+/test-*/
+
+# Formula audit / fetch temp files
+*.lock
+*.tmp
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Python (for any helper scripts)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Ruby (formulae are Ruby; gem artifacts if ever used)
+.bundle/
+vendor/bundle/
+*.gem
+
+# Node (for any GUI tooling)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
