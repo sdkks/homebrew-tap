@@ -25,7 +25,7 @@ class Nesdit < Formula
 
   def install
     bin.install "nesdit"
-    man1.install "share/man/man1/nesdit.1"
+    man1.install "share/man/man1/nesdit.1" if File.exist?("share/man/man1/nesdit.1")
   end
 
   test do
