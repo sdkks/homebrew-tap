@@ -5,13 +5,13 @@
 class Nesdit < Formula
   desc "Edit structured config files with jq-style queries"
   homepage "https://sdkks.github.io/nesdit/"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sdkks/nesdit/releases/download/v0.3.1/nesdit_0.3.1_darwin_arm64.tar.gz"
-      sha256 "0a73d75a6bbcc6a381aef04f08e424db7e1e5d7f8ddad97a757f84ff7c7e36e1"
+      url "https://github.com/sdkks/nesdit/releases/download/v0.3.2/nesdit_0.3.2_darwin_arm64.tar.gz"
+      sha256 "7e8ebc0758154a2a251570e055d5bad8679adbab9f4a38385c24ecbc9c3f1e08"
 
       define_method(:install) do
         bin.install "nesdit"
@@ -22,16 +22,16 @@ class Nesdit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sdkks/nesdit/releases/download/v0.3.1/nesdit_0.3.1_linux_amd64.tar.gz"
-      sha256 "c1c9af6452ac7be397fdc3e2a91cbeb17192528575e10fd662bca261de08c6fd"
+      url "https://github.com/sdkks/nesdit/releases/download/v0.3.2/nesdit_0.3.2_linux_amd64.tar.gz"
+      sha256 "b90319def400b0d391cf71343d9ce26be1afd432e4b620227f2941ec771a975c"
       define_method(:install) do
         bin.install "nesdit"
         man1.install "share/man/man1/nesdit.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sdkks/nesdit/releases/download/v0.3.1/nesdit_0.3.1_linux_arm64.tar.gz"
-      sha256 "a293cb3a99b42d7fb6b484c9868cec5643e45bfefffead5adbf74cb7bc0e2293"
+      url "https://github.com/sdkks/nesdit/releases/download/v0.3.2/nesdit_0.3.2_linux_arm64.tar.gz"
+      sha256 "b9b71773ed493a70ece10998afd8e41384dcfea100ab14a200c207773494fcd2"
       define_method(:install) do
         bin.install "nesdit"
         man1.install "share/man/man1/nesdit.1"
