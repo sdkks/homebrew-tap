@@ -1,9 +1,9 @@
 class Termin8r < Formula
   desc "Headless virtual terminal for AI agents"
   homepage "https://github.com/sdkks/termin8r"
-  url "https://github.com/sdkks/termin8r/releases/download/v0.5.2/termin8r_macos_aarch64"
-  version "0.5.2"
-  sha256 "0c3befe2f4a84209764458d1a89e6142ad929b10fc45ae2e65a6705cca70635d"
+  url "https://github.com/sdkks/termin8r/releases/download/v0.5.3/termin8r_macos_aarch64"
+  version "0.5.3"
+  sha256 "b5a0c8b438c648f643b6f126238b6122a85d532088b036786d78e932ba9a86fe"
 
   def install
     bin.install "termin8r_macos_aarch64" => "termin8r"
