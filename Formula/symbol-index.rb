@@ -1,9 +1,9 @@
 class SymbolIndex < Formula
   desc "MCP server for AI agents — symbol-level code search with semantic similarity"
   homepage "https://github.com/sdkks/symbol-index"
-  url "https://github.com/sdkks/symbol-index/releases/download/v0.11.0/symbol-index-v0.11.0-aarch64-apple-darwin.tar.gz"
-  version "0.11.0"
-  sha256 "e6afe307fed5827149d513e2e3f4fedf989cb867f69e9bcd15d029a4cb35d30b"
+  url "https://github.com/sdkks/symbol-index/releases/download/v0.12.1/symbol-index-v0.12.1-aarch64-apple-darwin.tar.gz"
+  version "0.12.1"
+  sha256 "3ffae8ebe277c6e9b6a24dd3a39db9eebdba711b85c96791b1dcc52a91c79216"
 
   def install
     bin.install "symbol-index"
@@ -17,6 +17,6 @@ class SymbolIndex < Formula
   end
 
   test do
-    assert_match "0.11.0", shell_output("#{bin}/symbol-index --version")
+    assert_match "0.12.1", shell_output("#{bin}/symbol-index --version")
   end
 end
