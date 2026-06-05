@@ -36,17 +36,17 @@ end
 class OcakForge < Formula
   desc "Companion CLI for the ocak Claude Code plugin — worktree management and session orchestration"
   homepage "https://github.com/sdkks/ocak-forge"
-  version "1.11.0"
+  version "1.12.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sdkks/ocak-forge/releases/download/v1.11.0/ocak-forge-darwin-arm64",
+      url "https://github.com/sdkks/ocak-forge/releases/download/v1.12.0/ocak-forge-darwin-arm64",
           using: GhPrivateReleaseDownloadStrategy
-      sha256 "ee52be5d1952417b8a9299d4fc1ad8975fd12e9641778c30f10530e1295f5e3f"
+      sha256 "73d9b7fb5bc359f73a448332caf99e58a5c702f65f9ffaecf9bd917103537c22"
     else
-      url "https://github.com/sdkks/ocak-forge/releases/download/v1.11.0/ocak-forge-darwin-x64",
+      url "https://github.com/sdkks/ocak-forge/releases/download/v1.12.0/ocak-forge-darwin-x64",
           using: GhPrivateReleaseDownloadStrategy
-      sha256 "5d75d239985915959d172bb45b893dc84fdb44ac9d0f3cc3dc1d75829f032439"
+      sha256 "fab8d67c6fe5fe71042d5a804edfb17f16fc58f216ebf568c1daf5be4e820168"
     end
   end
 
