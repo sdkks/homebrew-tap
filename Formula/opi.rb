@@ -33,13 +33,13 @@ end
 class Opi < Formula
   desc "pi.dev CLI harness — subagent orchestration, hooks, checkpointing, and SDLC lifecycle"
   homepage "https://github.com/sdkks/opi"
-  version "0.67.3"
+  version "0.67.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sdkks/opi/releases/download/v0.67.3/opi-darwin-arm64.tar.gz",
+      url "https://github.com/sdkks/opi/releases/download/v0.67.4/opi-darwin-arm64.tar.gz",
           using: GhPrivateReleaseDownloadStrategy
-      sha256 "5e86dea96becb023dfebfff394829733dd7f485248623b3730e691ee49f80903"
+      sha256 "32fe97f24e76889fc6793f7a97b11f8a9e04e66c8eed3f70ae4545310a682320"
     else
       odie "Intel (x86_64) macOS builds are not currently provided. Use an Apple Silicon Mac or build from source."
     end
